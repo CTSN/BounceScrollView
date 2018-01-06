@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roy.testzuni.BounceScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.roy.testzuni.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上拉查看图文详情"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/type_color"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</com.roy.testzuni.BounceScrollView>

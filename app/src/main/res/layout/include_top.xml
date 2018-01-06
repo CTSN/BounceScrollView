@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <!--轮播图-->
+    <com.roy.testzuni.BannerView
+        android:id="@+id/gl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/type_color"
+        android:clipChildren="false" />
+
+    <!--商品介绍-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="180dp"
+        app:cardBackgroundColor="@color/bac"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="千兆灯饰欧式客厅水晶吊灯现代客厅灯简约复式楼酒店吊灯主卧室灯餐厅灯具"
+                android:textColor="@color/font_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="10dp"
+                android:text="【8.18周年庆】店内满999减300！人气客卧6件套立减500，再抢200元现金红包！"
+                android:textColor="@color/sub_font_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_below="@id/tv_content"
+                android:layout_marginTop="10dp"
+                android:text="型号：8820-10"
+                android:textColor="@color/type_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_below="@id/tv_type"
+                android:layout_marginTop="20dp"
+                android:text="¥"
+                android:textColor="@color/font_color"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_sub"
+                android:layout_toRightOf="@id/tv_sub"
+                android:text="1400.00"
+                android:textColor="@color/font_color"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_price"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_price"
+                android:background="@drawable/details_hunt_bg"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:text="当前为预售活动商品 付款后7天后发货"
+                android:textColor="@color/type_color"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_sell_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_below="@id/tv_price"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="销量：5689"
+                android:textColor="@color/type_color"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sell_count"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已选"
+                    android:textColor="@color/type_color" />
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/detail_format_btn"
+                    android:text="10头"
+                    android:textColor="@color/font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll_select"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/bac"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快递规则"
+                    android:textColor="@color/type_color" />
+
+                <TextView
+                    android:id="@+id/tv_express"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="店铺单笔订单不满188元，收取23元快递费"
+                    android:textColor="@color/font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll_express"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/bac"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v2"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_count_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_type"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="限时特卖"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--体验馆-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近体验馆"
+                android:textColor="@color/font_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_address_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/list_filter_arrow_1"
+                android:text="到体验店看实体灯"
+                android:textColor="@color/font_color"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_address_go"
+                android:layout_marginTop="15dp"
+                android:background="@color/bac" />
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/v3"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/default_iv" />
+
+            <TextView
+                android:id="@+id/tv_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_address"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_address"
+                android:text="广东省中山市市区灯网体验店"
+                android:textColor="@color/font_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_address_name"
+                android:layout_below="@id/tv_address_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="广东省中山市市区灯网体验店"
+                android:textColor="@color/type_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
